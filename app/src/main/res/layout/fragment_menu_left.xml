@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:layout_marginRight="56dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header"></include>
+
+    <ListView
+        android:id="@+id/lstMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

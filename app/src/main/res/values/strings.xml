@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WallPaper</string>
+    <string name="NoNetwork">Không có kết nối Internet !</string>
+</resources>

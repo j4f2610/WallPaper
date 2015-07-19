@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ListViewRowHeight"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider_row"
+        android:paddingBottom="@dimen/PaddingMenuDivider"
+        android:visibility="gone"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/PaddingMenuDividerBot"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingMedium" />
+
+        <TextView
+            android:id="@+id/menuTitle"
+            style="@style/MenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PaddingTitleLeft"
+            android:paddingTop="4dp"
+            android:text="dasdada" />
+    </LinearLayout>
+
+
+</LinearLayout>

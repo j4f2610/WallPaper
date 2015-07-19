@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="dividerListView">1dp</dimen>
+    <!-- Text size-->
+    <dimen name="TextSizeMenu">14dp</dimen>
+    <!--Padding-->
+    <dimen name="PaddingMedium">16dp</dimen>
+    <dimen name="PaddingTitleLeft">50dp</dimen>
+    <dimen name="ListViewRowHeight">48dp</dimen>
+    <dimen name="PaddingRightMenu">56dp</dimen>
+    <dimen name="PaddingMenuDivider">5dp</dimen>
+    <dimen name="PaddingMenuDividerBot">15dp</dimen>
+</resources>
