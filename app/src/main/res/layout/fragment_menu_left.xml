@@ -6,10 +6,38 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_header"></include>
+
+    <include
+        android:id="@+id/include_layout"
+        layout="@layout/layout_header"></include>
+
+    <Button
+        android:id="@+id/btnRefreshMenu"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:drawableLeft="@drawable/refresh"
+        android:text="@string/Refresh"
+        android:visibility="gone" />
+
+    <com.j4f.wallpaper.Shimmer.ShimmerTextView
+        android:id="@+id/txtLoading"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/PaddingCardView"
+        android:text="@string/Loading"
+        android:visibility="gone"></com.j4f.wallpaper.Shimmer.ShimmerTextView>
 
     <ListView
         android:id="@+id/lstMenu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@null"
+        android:drawSelectorOnTop="true"
+        android:scrollbars="vertical"
+        android:visibility="invisible"></ListView>
 </LinearLayout>

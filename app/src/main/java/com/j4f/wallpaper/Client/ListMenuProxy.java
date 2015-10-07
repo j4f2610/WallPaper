@@ -1,8 +1,10 @@
 package com.j4f.wallpaper.Client;
 
+import android.app.Activity;
 import android.content.Context;
 
-import com.j4f.wallpaper.Helpers.Constants;
+import com.j4f.wallpaper.Helpers.Commons.Common;
+import com.j4f.wallpaper.Helpers.Commons.Constants;
 import com.j4f.wallpaper.Interfaces.AsyncTaskCompleteListener;
 import com.j4f.wallpaper.Model.BaseModel;
 
@@ -23,9 +25,9 @@ public class ListMenuProxy extends BaseProxy {
     private final static String TAG_URLICON = "MenuIcon";
     private AsyncTaskCompleteListener<ArrayList<BaseModel>> handleBaseDataCompleteListener = null;
     private ArrayList<BaseModel> baseModels;
-    public void getListMenu(Context context, AsyncTaskCompleteListener<ArrayList<BaseModel>> handleBaseDataCompleteListener) {
+    public void getListMenu(Activity activity, AsyncTaskCompleteListener<ArrayList<BaseModel>> handleBaseDataCompleteListener) {
         this.handleBaseDataCompleteListener = handleBaseDataCompleteListener;
-        super.callApi(Constants.makeUrl(METHOD_MENU_LIST), context, stringAsyncTaskCompleteListener);
+        super.callApi(activity,Constants.makeWebUrl(METHOD_MENU_LIST), stringAsyncTaskCompleteListener);
     }
 
     AsyncTaskCompleteListener<JSONObject> stringAsyncTaskCompleteListener = new AsyncTaskCompleteListener<JSONObject>() {
@@ -53,7 +55,7 @@ public class ListMenuProxy extends BaseProxy {
 
         @Override
         public void onError(int ErrorCode) {
-            int t = 0;
+           handleBaseDataCompleteListener.onError(ErrorCode);
         }
     };
 }

@@ -1,46 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="178dp"
     android:background="@drawable/header"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/layout_user"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_action" />
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/txtUserName"
+            style="@style/TextTitleMediumBold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:text="Akash Bangad"
-            android:textColor="#ffffff"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:text="akash.bangad93@gmail.com"
-            android:textColor="#ffffff"
-            android:textSize="14sp"
-            android:textStyle="normal" />
+            android:layout_gravity="bottom"
+            android:text="Wellcome: Just4Fun"
+            android:textColor="@color/white" />
     </LinearLayout>
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleView"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="38dp"
-        android:src="@drawable/ic_action" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/PaddingMenuDivider"
+        android:background="@drawable/boder_button"
+        android:padding="@dimen/Padding_medium"
+        android:text="@string/Login" />
+    <!--<com.facebook.login.widget.LoginButton
+        xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        facebook:com_facebook_login_text=""
+        facebook:com_facebook_logout_text=""
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>-->
 </RelativeLayout>

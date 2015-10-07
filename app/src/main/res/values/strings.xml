@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">WallPaper</string>
     <string name="NoNetwork">Không có kết nối Internet !</string>
+    <string name="SeeMore">Xem thêm...</string>
+    <string name="NoData">Không có dữ liệu !</string>
+    <string name="Loading">Loading...</string>
+    <string name="Refresh">Nhấn để tải lại...</string>
+    <string name="NoItem">Không có hình ảnh nào được lưu.</string>
+    <string name="Toast_Wallpaper_Set">Hình nền đã được cài đặt.</string>
+    <string name="Toast_Wallpaper_Error">Lỗi cài đặt.</string>
+    <string name="J4Fun">Released by Just4Fun Studio.</string>
+    <string name="J4FunInBox">Mọi thông tin thắc mắc và góp ý vui lòng gửi về:\n
+                                Email: just4fun@gmail.com\n
+                                FanPage: https://www.fa cebook.com/j4f\n
+                                Phone: +841656263792</string>
+    <string name="J4FunAboutUs">\nPhiên bản 1.0
+                                \n&#9679; WallPaper là một ứng dụng cài đặt hình nền OTT, bạn có thể xem, và chọn hình ảnh làm hình nền.
+                                \n&#9679; Tất cả hình ảnh trong WallPaper. Đều được sưu tầm trên internet.
+                                \n&#9679; WallPaper miễn phí và sẽ luôn là như thế.
+                                \n&#9679; Cập nhật hình ảnh liên tục.
+    </string>
+    <string name="ShareVia">Chia sẻ</string>
+    <string name="AboutUs">Giới thiệu</string>
+    <string name="facebook_app_id">1465071793798502</string>
+    <string name="Login">Đăng nhập</string>
 </resources>
